@@ -397,46 +397,43 @@
 
     <h2>Đặt dịch vụ</h2>
 
-    <form>
+    <form action="#" method="post">
 
         <p>
-            <label>Họ và tên:</label>
-            <input type="text" required>
+            <label for="ho-ten">Họ và tên:</label>
+            <input id="ho-ten" name="hoTen" type="text" required>
         </p>
 
         <p>
-            <label>Số điện thoại:</label>
-            <input type="tel" required>
+            <label for="so-dien-thoai">Số điện thoại:</label>
+            <input id="so-dien-thoai" name="soDienThoai" type="tel" required>
         </p>
 
         <p>
-            <label>Email:</label>
-            <input type="email">
+            <label for="email">Email:</label>
+            <input id="email" name="email" type="email">
         </p>
 
         <p>
-            <label>Dịch vụ:</label>
-            <select>
-                <option>Vệ sinh máy tính</option>
-                <option>Sửa lỗi máy tính</option>
-                <option>Thay keo tản nhiệt</option>
-                <option>Cài Windows</option>
-                <option>Kiểm tra lỗi máy tính</option>
+            <label for="dich-vu">Dịch vụ:</label>
+            <select id="dich-vu" name="dichVu" required>
+                <option value="">-- Chọn dịch vụ --</option>
+                <option value="ve-sinh-may-tinh">Vệ sinh máy tính</option>
+                <option value="sua-loi-may-tinh">Sửa lỗi máy tính</option>
+                <option value="thay-keo-tan-nhiet">Thay keo tản nhiệt</option>
+                <option value="cai-windows">Cài Windows</option>
+                <option value="kiem-tra-loi-may-tinh">Kiểm tra lỗi máy tính</option>
             </select>
         </p>
 
         <p>
-            <label>Ngày sử dụng:</label>
-            <input type="date">
+            <label for="ngay-su-dung">Ngày sử dụng:</label>
+            <input id="ngay-su-dung" name="ngaySuDung" type="date">
         </p>
 
         <p>
-            <label>Mô tả tình trạng máy:</label><br>
-            <textarea rows="5" cols="40"></textarea>
-        </p>
-
-        <button type="submit">Đặt dịch vụ</button>
-        <button type="reset">Nhập lại</button>
+            <label for="mo-ta">Mô tả tình trạng máy:</label><br>
+            <textarea id="mo-ta" name="moTa" rows="5" cols="40"></textarea>
 
     </form>
 
