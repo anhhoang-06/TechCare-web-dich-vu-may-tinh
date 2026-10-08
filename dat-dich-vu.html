@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đặt dịch vụ - TechCare</title>
+    <meta name="description" content="TechCare - Dịch vụ sửa chữa, vệ sinh, cho thuê máy tính và phụ kiện máy tính">
+</head>
+<body>
+<header>
+    <h1>TECHCARE</h1>
+    <p>Dịch vụ máy tính chuyên nghiệp</p>
+    <nav>
+    <a href="index.html#gioi-thieu">Giới thiệu</a> |
+    <a href="dich-vu.html">Dịch vụ</a> |
+    <a href="bang-gia.html">Bảng giá</a> |
+    <a href="cho-thue.html">Cho thuê</a> |
+    <a href="phu-kien.html">Phụ kiện</a> |
+    <a href="index.html#quy-trinh">Quy trình</a> |
+    <a href="dat-dich-vu.html">Đặt dịch vụ</a> |
+    <a href="index.html#lien-he">Liên hệ</a>
+</nav>
+</header>
+<hr>
+<main>
+<section id="dat-dich-vu">
+
+    <h2>Đặt dịch vụ</h2>
+
+    <form action="#" method="post">
+
+        <p>
+            <label for="ho-ten">Họ và tên:</label>
+            <input id="ho-ten" name="hoTen" type="text" required>
+        </p>
+
+        <p>
+            <label for="so-dien-thoai">Số điện thoại:</label>
+            <input id="so-dien-thoai" name="soDienThoai" type="tel" required>
+        </p>
+
+        <p>
+            <label for="email">Email:</label>
+            <input id="email" name="email" type="email">
+        </p>
+
+        <p>
+            <label for="dich-vu">Dịch vụ:</label>
+            <select id="dich-vu" name="dichVu" required>
+                <option value="">-- Chọn dịch vụ --</option>
+                <option value="ve-sinh-may-tinh">Vệ sinh máy tính</option>
+                <option value="sua-loi-may-tinh">Sửa lỗi máy tính</option>
+                <option value="thay-keo-tan-nhiet">Thay keo tản nhiệt</option>
+                <option value="cai-windows">Cài Windows</option>
+                <option value="kiem-tra-loi-may-tinh">Kiểm tra lỗi máy tính</option>
+            </select>
+        </p>
+
+        <p>
+            <label for="ngay-su-dung">Ngày sử dụng:</label>
+            <input id="ngay-su-dung" name="ngaySuDung" type="date">
+        </p>
+
+        <p>
+            <label for="mo-ta">Mô tả tình trạng máy:</label><br>
+            <textarea id="mo-ta" name="moTa" rows="5" cols="40"></textarea>
+
+    </form>
+
+</section>
+</main>
+<footer>
+    <hr>
+    <p>&copy; 2026 TechCare - Dịch vụ máy tính chuyên nghiệp</p>
+    <p>Hotline: 0900xxxxxx | Email: techcare@gmail.com</p>
+</footer>
+</body>
+</html>
