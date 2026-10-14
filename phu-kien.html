@@ -5,20 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Phụ kiện - TechCare</title>
     <meta name="description" content="TechCare - Dịch vụ sửa chữa, vệ sinh, cho thuê máy tính và phụ kiện máy tính">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <header>
     <h1>TECHCARE</h1>
     <p>Dịch vụ máy tính chuyên nghiệp</p>
     <nav>
-    <a href="index.html#gioi-thieu">Giới thiệu</a> |
-    <a href="index.html#quy-trinh">Quy trình</a> |
-    <a href="dich-vu.html">Dịch vụ</a> |
-    <a href="bang-gia.html">Bảng giá</a> |
-    <a href="cho-thue.html">Cho thuê</a> |
-    <a href="phu-kien.html">Phụ kiện</a> |
-    <a href="dat-dich-vu.html">Đặt dịch vụ</a> |
+    <a href="index.html#gioi-thieu">Giới thiệu</a>
+    <a href="dich-vu.html">Dịch vụ</a>
+    <a href="bang-gia.html">Bảng giá</a>
+    <a href="cho-thue.html">Cho thuê</a>
+    <a href="phu-kien.html" aria-current="page">Phụ kiện</a>
+    <a href="dat-dich-vu.html">Đặt dịch vụ</a>
     <a href="index.html#lien-he">Liên hệ</a>
+    <button class="cart-button" type="button" aria-label="Giỏ hàng, 0 sản phẩm" aria-haspopup="dialog" aria-controls="cart-dialog">
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <path d="M3 4h2l2.2 10.1a2 2 0 0 0 2 1.6h8.5a2 2 0 0 0 1.9-1.4L22 8H6"></path>
+            <circle cx="10" cy="20" r="1.5"></circle>
+            <circle cx="18" cy="20" r="1.5"></circle>
+        </svg>
+        <span class="cart-count" aria-live="polite">0</span>
+    </button>
 </nav>
 </header>
 <hr>
@@ -33,7 +41,8 @@
             </p>
             
 
-            <table border="1">
+            <div class="table-wrap">
+            <table>
 
                 <thead>
 
@@ -42,6 +51,7 @@
                         <th>Sản phẩm</th>
                         <th>Thương hiệu</th>
                         <th>Giá</th>
+                        <th>Thêm vào giỏ</th>
                     </tr>
 
                 </thead>
@@ -53,6 +63,7 @@
                         <td>Chuột gaming</td>
                         <td>Logitech</td>
                         <td>500.000 VNĐ</td>
+                        <td><button class="add-to-cart-button" type="button" data-product-name="Chuột gaming" data-product-price="500000">Thêm</button></td>
                     </tr>
 
                     <tr>
@@ -60,6 +71,7 @@
                         <td>Bàn phím cơ</td>
                         <td>Akko</td>
                         <td>1.200.000 VNĐ</td>
+                        <td><button class="add-to-cart-button" type="button" data-product-name="Bàn phím cơ" data-product-price="1200000">Thêm</button></td>
                     </tr>
 
                     <tr>
@@ -67,6 +79,7 @@
                         <td>Tai nghe gaming</td>
                         <td>HyperX</td>
                         <td>1.000.000 VNĐ</td>
+                        <td><button class="add-to-cart-button" type="button" data-product-name="Tai nghe gaming" data-product-price="1000000">Thêm</button></td>
                     </tr>
 
                     <tr>
@@ -74,6 +87,7 @@
                         <td>Webcam</td>
                         <td>Logitech</td>
                         <td>800.000 VNĐ</td>
+                        <td><button class="add-to-cart-button" type="button" data-product-name="Webcam" data-product-price="800000">Thêm</button></td>
                     </tr>
 
                     <tr>
@@ -81,11 +95,13 @@
                         <td>USB 64GB</td>
                         <td>SanDisk</td>
                         <td>180.000 VNĐ</td>
+                        <td><button class="add-to-cart-button" type="button" data-product-name="USB 64GB" data-product-price="180000">Thêm</button></td>
                     </tr>
 
                 </tbody>
 
             </table>
+            </div>
 
         </section>
 </main>
@@ -94,5 +110,6 @@
     <p>&copy; 2026 TechCare - Dịch vụ máy tính chuyên nghiệp</p>
     <p>Hotline: 0900xxxxxx | Email: techcare@gmail.com</p>
 </footer>
+<script src="cart.js"></script>
 </body>
 </html>
