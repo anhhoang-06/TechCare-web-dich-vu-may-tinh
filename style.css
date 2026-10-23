@@ -431,3 +431,58 @@ footer p {
         padding: 22px 18px;
     }
 }
+
+article {
+    overflow: hidden; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+article img {
+    transition: transform 0.5s ease;
+}
+
+article:hover {
+    transform: translateY(-4px);
+    border-color: #93c5fd;
+    box-shadow: 0 20px 40px rgba(37, 99, 235, 0.12);
+}
+
+article:hover img {
+    transform: scale(1.04);
+}
+
+.cart-items::-webkit-scrollbar {
+    width: 6px;
+}
+
+.cart-items::-webkit-scrollbar-track {
+    background: #f1f5f9;
+    border-radius: 999px;
+}
+
+.cart-items::-webkit-scrollbar-thumb {
+    background: #cbd5e1;
+    border-radius: 999px;
+    transition: background 0.2s ease;
+}
+
+.cart-items::-webkit-scrollbar-thumb:hover {
+    background: #94a3b8;
+}
+
+button:active,
+.cart-button:active {
+    transform: scale(0.97);
+}
+
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: antialiased;
+}
+
+.cart-empty {
+    text-align: center;
+    font-style: italic;
+    color: #94a3b8;
+    padding: 28px 0;
+} 
