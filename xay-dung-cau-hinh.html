@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xây dựng cấu hình PC - TechCare</title>
+    <meta name="description" content="TechCare - Tự xây dựng cấu hình PC theo nhu cầu, kiểm tra tương thích và tính giá tự động">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <h1>TECHCARE</h1>
+    <p>Dịch vụ máy tính chuyên nghiệp</p>
+    <nav>
+    <a href="index.html#gioi-thieu">Giới thiệu</a>
+    <a href="dich-vu.html">Dịch vụ</a>
+    <a href="bang-gia.html">Bảng giá</a>
+    <a href="cho-thue.html">Cho thuê</a>
+    <a href="phu-kien.html">Phụ kiện</a>
+    <a href="xay-dung-cau-hinh.html" aria-current="page">Xây dựng cấu hình</a>
+    <a href="dat-dich-vu.html">Đặt dịch vụ</a>
+    <a href="index.html#lien-he">Liên hệ</a>
+    <button class="cart-button" type="button" aria-label="Giỏ hàng, 0 sản phẩm" aria-haspopup="dialog" aria-controls="cart-dialog">
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <path d="M3 4h2l2.2 10.1a2 2 0 0 0 2 1.6h8.5a2 2 0 0 0 1.9-1.4L22 8H6"></path>
+            <circle cx="10" cy="20" r="1.5"></circle>
+            <circle cx="18" cy="20" r="1.5"></circle>
+        </svg>
+        <span class="cart-count" aria-live="polite">0</span>
+    </button>
+</nav>
+</header>
+<hr>
+<main>
+<section id="xay-dung-cau-hinh">
+    <h2>Xây dựng cấu hình PC</h2>
+    <p>Chọn linh kiện cho từng bộ phận. Hệ thống sẽ tự động tính tổng tiền và kiểm tra tương thích cơ bản.</p>
+
+    <div class="pc-builder">
+        <div class="pc-builder-parts" id="pc-builder-parts">
+            <!-- Các nhóm linh kiện sẽ được render bằng JS -->
+        </div>
+
+        <aside class="pc-builder-summary" aria-live="polite">
+            <h3>Tổng quan cấu hình</h3>
+            <ul class="pc-summary-list" id="pc-summary-list">
+                <li class="pc-summary-empty">Chưa chọn linh kiện nào.</li>
+            </ul>
+            <p class="pc-warning" id="pc-warning" hidden></p>
+            <p class="pc-total">Tổng cộng: <strong id="pc-total-price">0 VNĐ</strong></p>
+            <div class="pc-actions">
+                <button type="button" id="pc-add-all" class="pc-add-all">Thêm cả bộ vào giỏ</button>
+                <button type="button" id="pc-reset" class="pc-reset">Làm mới</button>
+            </div>
+        </aside>
+    </div>
+</section>
+</main>
+<footer>
+    <hr>
+    <p>&copy; 2026 TechCare - Dịch vụ máy tính chuyên nghiệp</p>
+    <p>Hotline: 0900xxxxxx | Email: techcare@gmail.com</p>
+</footer>
+<script src="cart.js"></script>
+<script src="pc-builder.js"></script>
+</body>
+</html>

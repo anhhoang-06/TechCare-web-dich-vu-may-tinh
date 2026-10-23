@@ -486,3 +486,164 @@ body {
     color: #94a3b8;
     padding: 28px 0;
 } 
+/* ===== PC Builder ===== */
+.pc-builder {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 340px;
+    gap: 24px;
+    align-items: start;
+}
+
+.pc-builder-parts {
+    display: grid;
+    gap: 14px;
+}
+
+.pc-part-group {
+    display: grid;
+    gap: 6px;
+    padding: 14px 16px;
+    border: 1px solid #dbeafe;
+    border-radius: 14px;
+    background: #f8fbff;
+}
+
+.pc-part-label {
+    color: #0f172a;
+    font-weight: 700;
+    margin: 0;
+}
+
+.pc-part-select {
+    width: 100%;
+    max-width: none;
+}
+
+.pc-builder-summary {
+    position: sticky;
+    top: 20px;
+    padding: 20px;
+    border: 1px solid #dbeafe;
+    border-radius: 16px;
+    background: #ffffff;
+    box-shadow: 0 16px 32px rgba(15, 23, 42, 0.08);
+}
+
+.pc-builder-summary h3 {
+    margin-top: 0;
+    color: #0f172a;
+    font-size: 1.3rem;
+}
+
+.pc-summary-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 12px;
+    display: grid;
+    gap: 8px;
+    font-size: 0.93rem;
+}
+
+.pc-summary-item {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    padding-bottom: 8px;
+    border-bottom: 1px dashed #e2e8f0;
+}
+
+.pc-summary-item span:last-child {
+    color: #1d4ed8;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.pc-summary-empty {
+    color: #64748b;
+    font-style: italic;
+}
+
+.pc-warning {
+    margin: 12px 0;
+    padding: 10px 12px;
+    border-radius: 10px;
+    background: #fef3c7;
+    color: #92400e;
+    font-size: 0.9rem;
+}
+
+.pc-total {
+    margin: 16px 0;
+    padding-top: 12px;
+    border-top: 1px solid #dbeafe;
+    font-size: 1.05rem;
+}
+
+.pc-total strong {
+    color: #dc2626;
+    font-size: 1.25rem;
+}
+
+.pc-actions {
+    display: grid;
+    gap: 10px;
+}
+
+.pc-add-all {
+    width: 100%;
+}
+
+.pc-add-all:disabled {
+    background: #94a3b8;
+    cursor: not-allowed;
+    transform: none;
+}
+
+.pc-reset {
+    width: 100%;
+    background: #e2e8f0;
+    color: #1e293b;
+}
+
+.pc-reset:hover,
+.pc-reset:focus {
+    background: #cbd5e1;
+}
+
+@media (max-width: 860px) {
+    .pc-builder {
+        grid-template-columns: 1fr;
+    }
+
+    .pc-builder-summary {
+        position: static;
+    }
+}
+/* ===== Tùy chọn số lượng linh kiện (RAM) ===== */
+.pc-part-qty {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px dashed #dbeafe;
+}
+
+.pc-part-qty label {
+    margin-bottom: 0;
+    font-weight: 600;
+    color: #475569;
+    font-size: 0.95rem;
+}
+
+.pc-part-qty-select {
+    width: auto;
+    max-width: 120px;
+    padding: 8px 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    background-color: #ffffff;
+    font: inherit;
+    color: #1e293b;
+    cursor: pointer;
+}
