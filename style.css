@@ -136,6 +136,11 @@ section h2 {
     font-size: clamp(1.8rem, 3vw, 2.6rem);
 }
 
+#gioi-thieu > img {
+    width: min(100%, 500px);
+    margin: 18px auto;
+}
+
 section h3 {
     margin-top: 24px;
     margin-bottom: 12px;
